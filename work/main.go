@@ -1,6 +1,7 @@
 package main
 
 import (
+	work1 "command-line-argumentsC:\\works\\subject\\2566 2\\CIT3518 Network Programming\\git_network\\go-network2\\work1\\work1.go"
 	"fmt"
 )
 
@@ -12,6 +13,9 @@ type Person struct {
 }
 
 func main() {
+
+	message := work1.Work1("Gladys")
+	fmt.Println(message)
 	var student1 string = "John" //type is string
 	var student2 = "Jane"        //type is inferred
 	x := 2                       //type is inferred
