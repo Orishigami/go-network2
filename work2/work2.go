@@ -1,4 +1,4 @@
-package work2
+package main
 
 import (
 	"fmt"
@@ -8,7 +8,7 @@ import (
 	"github.com/gorilla/mux"
 )
 
-func Work2() {
+func main() {
 	r1 := mux.NewRouter()
 	r1.HandleFunc("/cal/{number1}/plus/{number2}", func(w http.ResponseWriter, r *http.Request) {
 		vars := mux.Vars(r)
@@ -18,6 +18,6 @@ func Work2() {
 
 		fmt.Fprintf(w, "%d + %d = %d", number1, number2, sum)
 	})
+	http.ListenAndServe(":8080", r1)
 
-	http.ListenAndServe(":80", nil)
 }
