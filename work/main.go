@@ -1,7 +1,7 @@
 package main
 
 import (
-	work1 "command-line-argumentsC:\\works\\subject\\2566 2\\CIT3518 Network Programming\\git_network\\go-network2\\work1\\work1.go"
+	"github.com/Orishigami/go-network2/work1"
 
 	"fmt"
 )
